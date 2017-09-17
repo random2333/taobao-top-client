@@ -2,11 +2,13 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.picture.pictures.get request
  * 
  * @author auto create
- * @since 1.0, 2017.09.05
+ * @since 1.0, 2016.03.23
  */
 class PicturePicturesGetRequest
 {
@@ -233,8 +235,6 @@ class PicturePicturesGetRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxValue($this->pageSize,1000,"pageSize");
-		RequestCheckUtil::checkMinValue($this->pageSize,1,"pageSize");
 	}
 	
 	public function putOtherTextParam($key, $value) {

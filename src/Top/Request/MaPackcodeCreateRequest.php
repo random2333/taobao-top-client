@@ -2,6 +2,8 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.ma.packcode.create request
  * 

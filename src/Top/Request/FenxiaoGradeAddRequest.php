@@ -2,6 +2,8 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.fenxiao.grade.add request
  * 

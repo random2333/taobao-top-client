@@ -2,6 +2,8 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.top.sdk.feedback.upload request
  * 

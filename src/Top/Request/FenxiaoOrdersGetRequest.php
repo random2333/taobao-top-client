@@ -2,11 +2,13 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.fenxiao.orders.get request
  * 
  * @author auto create
- * @since 1.0, 2017.08.12
+ * @since 1.0, 2017.03.06
  */
 class FenxiaoOrdersGetRequest
 {

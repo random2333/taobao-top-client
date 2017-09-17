@@ -2,11 +2,13 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.trade.fullinfo.get request
  * 
  * @author auto create
- * @since 1.0, 2017.09.11
+ * @since 1.0, 2017.07.25
  */
 class TradeFullinfoGetRequest
 {

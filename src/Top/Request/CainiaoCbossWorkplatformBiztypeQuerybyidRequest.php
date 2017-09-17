@@ -2,6 +2,8 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: cainiao.cboss.workplatform.biztype.querybyid request
  * 

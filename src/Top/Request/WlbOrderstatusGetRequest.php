@@ -2,11 +2,13 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.wlb.orderstatus.get request
  * 
  * @author auto create
- * @since 1.0, 2017.08.30
+ * @since 1.0, 2016.11.14
  */
 class WlbOrderstatusGetRequest
 {

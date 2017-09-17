@@ -2,11 +2,13 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.refund.messages.get request
  * 
  * @author auto create
- * @since 1.0, 2017.08.22
+ * @since 1.0, 2015.01.19
  */
 class RefundMessagesGetRequest
 {

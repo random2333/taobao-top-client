@@ -2,11 +2,13 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: cainiao.waybill.ii.get request
  * 
  * @author auto create
- * @since 1.0, 2017.09.05
+ * @since 1.0, 2017.04.10
  */
 class CainiaoWaybillIiGetRequest
 {

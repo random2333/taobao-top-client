@@ -2,11 +2,13 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.rp.returngoods.agree request
  * 
  * @author auto create
- * @since 1.0, 2017.09.09
+ * @since 1.0, 2014.11.10
  */
 class RpReturngoodsAgreeRequest
 {
@@ -29,11 +31,6 @@ class RpReturngoodsAgreeRequest
 	 * 卖家提供的退货地址的邮编，淘宝退款为必填项。
 	 **/
 	private $post;
-	
-	/** 
-	 * 邮费承担方，买家承担值为1，卖家承担值为0
-	 **/
-	private $postFeeBearRole;
 	
 	/** 
 	 * 退款编号
@@ -109,17 +106,6 @@ class RpReturngoodsAgreeRequest
 	public function getPost()
 	{
 		return $this->post;
-	}
-
-	public function setPostFeeBearRole($postFeeBearRole)
-	{
-		$this->postFeeBearRole = $postFeeBearRole;
-		$this->apiParas["post_fee_bear_role"] = $postFeeBearRole;
-	}
-
-	public function getPostFeeBearRole()
-	{
-		return $this->postFeeBearRole;
 	}
 
 	public function setRefundId($refundId)

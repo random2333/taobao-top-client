@@ -2,11 +2,13 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.wlb.waybill.i.product request
  * 
  * @author auto create
- * @since 1.0, 2017.09.05
+ * @since 1.0, 2017.03.31
  */
 class WlbWaybillIProductRequest
 {

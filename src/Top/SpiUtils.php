@@ -198,7 +198,7 @@ class SpiUtils{
 	{
 		$localIp = isset($_SERVER["SERVER_ADDR"]) ? $_SERVER["SERVER_ADDR"] : "CLI";
 		$logger = new TopLogger;
-		$logger->conf["log_file"] = rtrim(TOP_SDK_WORK_DIR, '\\/') . '/' . "logs/top_comm_err_". date("Y-m-d") . ".log";
+		$logger->conf["log_file"] = rtrim( env('TOP_SDK_WORK_DIR','/tmp/'), '\\/') . '/' . "logs/top_comm_err_". date("Y-m-d") . ".log";
 		$logger->conf["separator"] = "^_^";
 		$logData = array(
 		"checkTopSign error" ,

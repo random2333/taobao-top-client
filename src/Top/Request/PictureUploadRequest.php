@@ -2,11 +2,13 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.picture.upload request
  * 
  * @author auto create
- * @since 1.0, 2017.09.04
+ * @since 1.0, 2017.03.20
  */
 class PictureUploadRequest
 {

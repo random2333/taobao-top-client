@@ -2,11 +2,13 @@
 
 namespace Top\Request;
 
+use Top\RequestCheckUtil;
+
 /**
  * TOP API: taobao.wlb.wms.sku.create request
  * 
  * @author auto create
- * @since 1.0, 2017.08.31
+ * @since 1.0, 2016.05.25
  */
 class WlbWmsSkuCreateRequest
 {
