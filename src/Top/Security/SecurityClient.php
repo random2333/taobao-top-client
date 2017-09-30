@@ -14,10 +14,12 @@ class SecurityClient
 
     function __construct(TopClient $client, $random)
     {
-
-        define('APP_SECRET_TYPE', '2');
-        define('APP_USER_SECRET_TYPE', '3');
-
+        if(!defined("APP_SECRET_TYPE")){
+            define('APP_SECRET_TYPE', '2');
+        }
+        if(!defined("APP_USER_SECRET_TYPE")) {
+            define('APP_USER_SECRET_TYPE', '3');
+        }
         $this->topClient    = $client;
         $this->randomNum    = $random;
         $this->securityUtil = new SecurityUtil();
@@ -483,10 +485,10 @@ class SecurityClient
         }
 
         $response = $this->topClient->execute($request, $secretContext->session);
-        if ($response->code == 0) {
-            return true;
+        if (isset($response->code)) {
+            return false;
         }
-        return false;
+        return true;
     }
 
     /**
@@ -511,8 +513,8 @@ class SecurityClient
         }
 
         $response = $this->topClient->execute($request, $topSession);
-        if ($response->code != 0) {
-            throw new Exception($response->msg);
+        if (isset($response->code)) {
+            throw new \Exception($response->msg);
         }
 
         $time                          = time();
