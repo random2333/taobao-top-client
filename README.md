@@ -10,7 +10,7 @@
 * 编辑.env文件，设置appid,appsecret
 ### 示例代码
 ```php
-use Top\TopClient;
+use Oyleanu\TopClient\Facades\TopClient;
 use Top\Request\TbkItemGetRequest;
 
 $topclient = TopClient::connection();

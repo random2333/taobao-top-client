@@ -256,9 +256,6 @@ class SecurityUtil
 
         $result = Security::decrypt($secretData->originalBase64Value, $secretContext->secret);
 
-        if ($separator == PHONE_SEPARATOR_CHAR && !$secretData->search) {
-            return $secretData->originalValue . $result;
-        }
         return $result;
     }
 
