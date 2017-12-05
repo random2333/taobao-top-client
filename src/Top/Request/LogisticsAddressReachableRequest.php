@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.logistics.address.reachable request
  * 
  * @author auto create
- * @since 1.0, 2016.09.12
+ * @since 1.0, 2017.09.11
  */
 class LogisticsAddressReachableRequest
 {

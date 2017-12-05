@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.wlb.imports.waybill.get request
  * 
  * @author auto create
- * @since 1.0, 2016.01.27
+ * @since 1.0, 2017.11.22
  */
 class WlbImportsWaybillGetRequest
 {

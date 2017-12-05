@@ -8,12 +8,12 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.inventory.adjust.external request
  * 
  * @author auto create
- * @since 1.0, 2017.05.24
+ * @since 1.0, 2017.11.07
  */
 class InventoryAdjustExternalRequest
 {
 	/** 
-	 * biz_type
+	 * 外部订单类型, BALANCE:盘点、NON_TAOBAO_TRADE:非淘宝交易、ALLOCATE:调拨、OTHERS:其他
 	 **/
 	private $bizType;
 	
@@ -23,7 +23,7 @@ class InventoryAdjustExternalRequest
 	private $bizUniqueCode;
 	
 	/** 
-	 * 商品初始库存信息： [{"scItemId":"商品后端ID，如果有传scItemCode,参数可以为0","scItemCode":"商品商家编码","inventoryType":"库存类型 1：正常,”direction”: 1: 盘盈 -1: 盘亏,参数可选,"quantity":"数量(正数)"}]
+	 * 商品初始库存信息： [{"scItemId":"商品后端ID，如果有传scItemCode,参数可以为0","scItemCode":"商品商家编码","inventoryType":"库存类型  1：正常,”direction”: 1: 盘盈 -1: 盘亏,参数可选,"quantity":"数量(正数)"}]
 	 **/
 	private $items;
 	
@@ -38,12 +38,12 @@ class InventoryAdjustExternalRequest
 	private $operateTime;
 	
 	/** 
-	 * operate_type
+	 * test
 	 **/
 	private $operateType;
 	
 	/** 
-	 * reduce_type
+	 * test
 	 **/
 	private $reduceType;
 	
@@ -157,7 +157,6 @@ class InventoryAdjustExternalRequest
 		
 		RequestCheckUtil::checkNotNull($this->bizUniqueCode,"bizUniqueCode");
 		RequestCheckUtil::checkNotNull($this->items,"items");
-		RequestCheckUtil::checkNotNull($this->operateTime,"operateTime");
 		RequestCheckUtil::checkNotNull($this->storeCode,"storeCode");
 	}
 	

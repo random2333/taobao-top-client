@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.topats.jushita.jdp.datadelete request
  * 
  * @author auto create
- * @since 1.0, 2016.10.31
+ * @since 1.0, 2017.08.10
  */
 class TopatsJushitaJdpDatadeleteRequest
 {
@@ -16,6 +16,11 @@ class TopatsJushitaJdpDatadeleteRequest
 	 * 删除数据时间段的结束修改时间，格式为：yyyy-MM-dd HH:mm:ss，结束时间必须为前天的23:59:59秒以前，根据是业务的modified时间
 	 **/
 	private $endDate;
+	
+	/** 
+	 * 数据库实例名，当删除用户的绑定关系已经不在推送里时，此参数必填
+	 **/
+	private $rdsName;
 	
 	/** 
 	 * 删除数据时间段的起始修改时间，格式为：yyyy-MM-dd HH:mm:ss,根据是业务的modified时间
@@ -28,7 +33,7 @@ class TopatsJushitaJdpDatadeleteRequest
 	private $syncTypes;
 	
 	/** 
-	 * 用户昵称，不填表示删除所有用户的数据。
+	 * 用户昵称，必填
 	 **/
 	private $userNick;
 	
@@ -43,6 +48,17 @@ class TopatsJushitaJdpDatadeleteRequest
 	public function getEndDate()
 	{
 		return $this->endDate;
+	}
+
+	public function setRdsName($rdsName)
+	{
+		$this->rdsName = $rdsName;
+		$this->apiParas["rds_name"] = $rdsName;
+	}
+
+	public function getRdsName()
+	{
+		return $this->rdsName;
 	}
 
 	public function setStartDate($startDate)
@@ -94,6 +110,7 @@ class TopatsJushitaJdpDatadeleteRequest
 		RequestCheckUtil::checkNotNull($this->endDate,"endDate");
 		RequestCheckUtil::checkNotNull($this->startDate,"startDate");
 		RequestCheckUtil::checkNotNull($this->syncTypes,"syncTypes");
+		RequestCheckUtil::checkNotNull($this->userNick,"userNick");
 	}
 	
 	public function putOtherTextParam($key, $value) {

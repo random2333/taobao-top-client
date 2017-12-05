@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.update request
  * 
  * @author auto create
- * @since 1.0, 2016.09.13
+ * @since 1.0, 2017.11.30
  */
 class ItemUpdateRequest
 {
@@ -601,6 +601,11 @@ class ItemUpdateRequest
 	 * 有效期。可选值:7,14;单位:天;
 	 **/
 	private $validThru;
+	
+	/** 
+	 * 主图视频id
+	 **/
+	private $videoId;
 	
 	/** 
 	 * 商品的重量(商超卖家专用字段)
@@ -1910,6 +1915,17 @@ class ItemUpdateRequest
 	public function getValidThru()
 	{
 		return $this->validThru;
+	}
+
+	public function setVideoId($videoId)
+	{
+		$this->videoId = $videoId;
+		$this->apiParas["video_id"] = $videoId;
+	}
+
+	public function getVideoId()
+	{
+		return $this->videoId;
 	}
 
 	public function setWeight($weight)

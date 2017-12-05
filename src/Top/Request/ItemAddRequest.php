@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.add request
  * 
  * @author auto create
- * @since 1.0, 2015.11.23
+ * @since 1.0, 2017.11.30
  */
 class ItemAddRequest
 {
@@ -601,6 +601,11 @@ class ItemAddRequest
 	 * 有效期。可选值:7,14;单位:天;默认值:14
 	 **/
 	private $validThru;
+	
+	/** 
+	 * 主图视频id
+	 **/
+	private $videoId;
 	
 	/** 
 	 * 商品的重量(商超卖家专用字段)
@@ -1912,6 +1917,17 @@ class ItemAddRequest
 		return $this->validThru;
 	}
 
+	public function setVideoId($videoId)
+	{
+		$this->videoId = $videoId;
+		$this->apiParas["video_id"] = $videoId;
+	}
+
+	public function getVideoId()
+	{
+		return $this->videoId;
+	}
+
 	public function setWeight($weight)
 	{
 		$this->weight = $weight;
@@ -1968,7 +1984,6 @@ class ItemAddRequest
 		RequestCheckUtil::checkMinValue($this->paimaiInfoValidMinute,0,"paimaiInfoValidMinute");
 		RequestCheckUtil::checkMaxLength($this->propertyAlias,800,"propertyAlias");
 		RequestCheckUtil::checkMaxLength($this->sellPoint,150,"sellPoint");
-		RequestCheckUtil::checkMaxListSize($this->sellerCids,10,"sellerCids");
 		RequestCheckUtil::checkNotNull($this->stuffStatus,"stuffStatus");
 		RequestCheckUtil::checkNotNull($this->title,"title");
 		RequestCheckUtil::checkMaxLength($this->title,120,"title");

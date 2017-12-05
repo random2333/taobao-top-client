@@ -381,6 +381,11 @@ class Trade
 	public $is_lgtype;
 	
 	/** 
+	 * 是否是智慧门店订单，只有true，或者 null 两种情况
+	 **/
+	public $is_o2o_passport;
+	
+	/** 
 	 * 是否是多次发货的订单如果卖家对订单进行多次发货，则为true否则为false
 	 **/
 	public $is_part_consign;
@@ -621,6 +626,11 @@ class Trade
 	public $pic_path;
 	
 	/** 
+	 * platformSubsidyFee
+	 **/
+	public $platform_subsidy_fee;
+	
+	/** 
 	 * 买家使用积分,下单时生成，且一直不变。格式:100;单位:个.
 	 **/
 	public $point_fee;
@@ -709,6 +719,31 @@ class Trade
 	 * 收货人的邮编
 	 **/
 	public $receiver_zip;
+	
+	/** 
+	 * rechargeFee
+	 **/
+	public $recharge_fee;
+	
+	/** 
+	 * 门店端设备id
+	 **/
+	public $retail_device_id;
+	
+	/** 
+	 * 门店导购员id
+	 **/
+	public $retail_guide_id;
+	
+	/** 
+	 * 新零售线下订单id
+	 **/
+	public $retail_out_order_id;
+	
+	/** 
+	 * 新零售门店编码
+	 **/
+	public $retail_store_code;
 	
 	/** 
 	 * 处方药未审核状态

@@ -8,12 +8,12 @@ use Top\RequestCheckUtil;
  * TOP API: cainiao.cloudprint.clientinfo.put request
  * 
  * @author auto create
- * @since 1.0, 2016.06.23
+ * @since 1.0, 2017.08.30
  */
 class CainiaoCloudprintClientinfoPutRequest
 {
 	/** 
-	 * 收集的数据，json格式
+	 * 客户端上传json数据
 	 **/
 	private $jsonData;
 	

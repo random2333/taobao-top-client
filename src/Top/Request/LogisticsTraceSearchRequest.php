@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.logistics.trace.search request
  * 
  * @author auto create
- * @since 1.0, 2016.11.18
+ * @since 1.0, 2017.11.16
  */
 class LogisticsTraceSearchRequest
 {

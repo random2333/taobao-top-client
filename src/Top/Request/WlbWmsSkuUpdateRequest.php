@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.wlb.wms.sku.update request
  * 
  * @author auto create
- * @since 1.0, 2016.05.24
+ * @since 1.0, 2017.09.12
  */
 class WlbWmsSkuUpdateRequest
 {

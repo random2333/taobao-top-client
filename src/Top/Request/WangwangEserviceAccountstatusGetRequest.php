@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.wangwang.eservice.accountstatus.get request
  * 
  * @author auto create
- * @since 1.0, 2014.07.02
+ * @since 1.0, 2017.11.02
  */
 class WangwangEserviceAccountstatusGetRequest
 {

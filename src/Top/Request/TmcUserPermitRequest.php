@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.tmc.user.permit request
  * 
  * @author auto create
- * @since 1.0, 2016.08.12
+ * @since 1.0, 2017.11.30
  */
 class TmcUserPermitRequest
 {

@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.wlb.orderstatus.get request
  * 
  * @author auto create
- * @since 1.0, 2016.11.14
+ * @since 1.0, 2017.11.16
  */
 class WlbOrderstatusGetRequest
 {

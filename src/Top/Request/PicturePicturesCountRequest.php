@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.picture.pictures.count request
  * 
  * @author auto create
- * @since 1.0, 2015.10.13
+ * @since 1.0, 2017.10.28
  */
 class PicturePicturesCountRequest
 {

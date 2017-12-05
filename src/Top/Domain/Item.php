@@ -175,6 +175,11 @@ fee_card(话费软件代充)
 	public $inner_shop_auction_template_id;
 	
 	/** 
+	 * 针对当前商品的自定义属性值
+	 **/
+	public $input_custom_cpv;
+	
+	/** 
 	 * 用户自行输入的类目属性ID串。结构："pid1,pid2,pid3"，如："20000"（表示品牌） 注：通常一个类目下用户可输入的关键属性不超过1个。
 	 **/
 	public $input_pids;

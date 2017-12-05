@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.areas.get request
  * 
  * @author auto create
- * @since 1.0, 2016.04.13
+ * @since 1.0, 2017.10.17
  */
 class AreasGetRequest
 {

@@ -18,7 +18,7 @@ class TmcUserCancelRequest
 	private $nick;
 	
 	/** 
-	 * 用户所属的平台类型，tbUIC:淘宝用户; icbu: icbu用户
+	 * 用户所属的平台类型，tbUIC:淘宝用户; icbu: icbu用户;ae:ae用户
 	 **/
 	private $userPlatform;
 	

@@ -386,9 +386,19 @@ class Order
 	public $pic_path;
 	
 	/** 
+	 * platformSubsidyFee
+	 **/
+	public $platform_subsidy_fee;
+	
+	/** 
 	 * 商品价格。精确到2位小数;单位:元。如:200.07，表示:200元7分
 	 **/
 	public $price;
+	
+	/** 
+	 * 个人充值红包金额
+	 **/
+	public $recharge_fee;
 	
 	/** 
 	 * 最近退款ID

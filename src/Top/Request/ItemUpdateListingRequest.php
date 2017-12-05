@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.update.listing request
  * 
  * @author auto create
- * @since 1.0, 2017.06.09
+ * @since 1.0, 2017.09.14
  */
 class ItemUpdateListingRequest
 {

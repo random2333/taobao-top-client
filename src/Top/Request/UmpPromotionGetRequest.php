@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.ump.promotion.get request
  * 
  * @author auto create
- * @since 1.0, 2016.12.13
+ * @since 1.0, 2017.11.11
  */
 class UmpPromotionGetRequest
 {

@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.wlb.waybill.i.fullupdate request
  * 
  * @author auto create
- * @since 1.0, 2017.03.31
+ * @since 1.0, 2017.09.05
  */
 class WlbWaybillIFullupdateRequest
 {
