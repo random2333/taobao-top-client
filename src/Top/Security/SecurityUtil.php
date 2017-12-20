@@ -238,8 +238,9 @@ class SecurityUtil
     function decrypt($data, $type, $secretContext)
     {
         if (!$this->isEncryptData($data, $type)) {
-            throw new \Exception("数据[" . $data . "]不是类型为[" . $type . "]的加密数据");
-        }
+            \Log::info("数据[" . $data . "]不是类型为[" . $type . "]的加密数据");
+            return $data;        
+	}
         $dataLen   = strlen($data);
         $separator = $this->SEPARATOR_CHAR_MAP[$type];
 
