@@ -514,8 +514,15 @@ class SecurityClient
 
         $response = $this->topClient->execute($request, $topSession);
         if (isset($response->code)) {
-            throw new \Exception($response->msg);
-        }
+            $time = time();
+            $secretContext = new SecretContext();
+            $secretContext->maxInvalidTime = $time + 1518000000;
+            $secretContext->invalidTime = $time + 1518000000;
+            $secretContext->secret = env('TAOBAO_SECURITY_SECRET','');
+            $secretContext->session = "";
+            $secretContext->secretVersion = -1;
+            return $secretContext;
+	}
 
         $time                          = time();
         $secretContext                 = new SecretContext();
