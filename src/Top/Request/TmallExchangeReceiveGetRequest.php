@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: tmall.exchange.receive.get request
  * 
  * @author auto create
- * @since 1.0, 2017.10.25
+ * @since 1.0, 2018.08.09
  */
 class TmallExchangeReceiveGetRequest
 {
@@ -28,7 +28,7 @@ class TmallExchangeReceiveGetRequest
 	private $buyerNick;
 	
 	/** 
-	 * 换货状态，具体包括买家已经申请退款，等待卖家同意(1)、卖家已经同意换货，等待买家退货(2)、买家已经退货，等待卖家确认收货(3)、换货关闭(4)、换货成功(5)、卖家拒绝确认收货(6)、换货结束(11)、卖家确认收货,等待卖家发货(12)、换货关闭,转退货退款(14)
+	 * 换货状态，具体包括：换货待处理(1), 待买家退货(2), 买家已退货，待收货(3),  换货关闭(4), 换货成功(5), 待买家修改(6), 待发出换货商品(12), 待买家收货(13), 请退款(14)
 	 **/
 	private $disputeStatusArray;
 	
@@ -43,7 +43,7 @@ class TmallExchangeReceiveGetRequest
 	private $endGmtModifedTime;
 	
 	/** 
-	 * 返回字段。目前支持dispute_id, bizorder_id, num, buyer_nick,buyer_name, status, created, modified, reason, title, buyer_logistic_no, seller_logistic_no, bought_sku, exchange_sku, buyer_address, address, time_out, buyer_phone, buyer_logistic_name, seller_logistic_name
+	 * 返回字段。目前支持dispute_id, bizorder_id, num, buyer_nick, status, created, modified, reason, title, buyer_logistic_no, seller_logistic_no, bought_sku, exchange_sku, buyer_address, address, buyer_phone, buyer_logistic_name, seller_logistic_name, alipay_no, buyer_name, seller_nick
 	 **/
 	private $fields;
 	
@@ -63,7 +63,7 @@ class TmallExchangeReceiveGetRequest
 	private $pageSize;
 	
 	/** 
-	 * 退款单号ID列表
+	 * 退款单号ID列表，最多只能输入20个id
 	 **/
 	private $refundIdArray;
 	
@@ -237,7 +237,7 @@ class TmallExchangeReceiveGetRequest
 		
 		RequestCheckUtil::checkMaxListSize($this->disputeStatusArray,20,"disputeStatusArray");
 		RequestCheckUtil::checkNotNull($this->fields,"fields");
-		RequestCheckUtil::checkMaxListSize($this->fields,20,"fields");
+		RequestCheckUtil::checkMaxListSize($this->fields,100,"fields");
 		RequestCheckUtil::checkMaxListSize($this->refundIdArray,20,"refundIdArray");
 	}
 	

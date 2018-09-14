@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: cainiao.openstorage.seller.resourcedetail.get request
  * 
  * @author auto create
- * @since 1.0, 2016.08.25
+ * @since 1.0, 2018.07.25
  */
 class CainiaoOpenstorageSellerResourcedetailGetRequest
 {

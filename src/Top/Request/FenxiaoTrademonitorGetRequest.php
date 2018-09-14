@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.fenxiao.trademonitor.get request
  * 
  * @author auto create
- * @since 1.0, 2016.03.17
+ * @since 1.0, 2018.07.26
  */
 class FenxiaoTrademonitorGetRequest
 {

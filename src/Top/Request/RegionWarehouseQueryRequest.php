@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.region.warehouse.query request
  * 
  * @author auto create
- * @since 1.0, 2016.07.07
+ * @since 1.0, 2018.07.25
  */
 class RegionWarehouseQueryRequest
 {

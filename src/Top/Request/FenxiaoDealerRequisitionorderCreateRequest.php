@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.fenxiao.dealer.requisitionorder.create request
  * 
  * @author auto create
- * @since 1.0, 2014.04.10
+ * @since 1.0, 2018.07.26
  */
 class FenxiaoDealerRequisitionorderCreateRequest
 {
@@ -205,7 +205,6 @@ class FenxiaoDealerRequisitionorderCreateRequest
 		
 		RequestCheckUtil::checkNotNull($this->address,"address");
 		RequestCheckUtil::checkNotNull($this->buyerName,"buyerName");
-		RequestCheckUtil::checkNotNull($this->logisticsType,"logisticsType");
 		RequestCheckUtil::checkNotNull($this->orderDetail,"orderDetail");
 		RequestCheckUtil::checkMaxListSize($this->orderDetail,50,"orderDetail");
 		RequestCheckUtil::checkNotNull($this->province,"province");

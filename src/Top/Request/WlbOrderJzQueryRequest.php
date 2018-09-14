@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.wlb.order.jz.query request
  * 
  * @author auto create
- * @since 1.0, 2015.12.17
+ * @since 1.0, 2018.07.26
  */
 class WlbOrderJzQueryRequest
 {

@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.fenxiao.distributor.items.get request
  * 
  * @author auto create
- * @since 1.0, 2016.03.15
+ * @since 1.0, 2018.07.26
  */
 class FenxiaoDistributorItemsGetRequest
 {

@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.picture.pictures.get request
  * 
  * @author auto create
- * @since 1.0, 2017.09.05
+ * @since 1.0, 2018.07.25
  */
 class PicturePicturesGetRequest
 {

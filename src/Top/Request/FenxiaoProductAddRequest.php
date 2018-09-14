@@ -8,15 +8,10 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.fenxiao.product.add request
  * 
  * @author auto create
- * @since 1.0, 2013.11.28
+ * @since 1.0, 2018.07.26
  */
 class FenxiaoProductAddRequest
 {
-	/** 
-	 * 警戒库存必须是0到29999。
-	 **/
-	private $alarmNumber;
-	
 	/** 
 	 * 所属类目id，参考Taobao.itemcats.get，不支持成人等类目，输入成人类目id保存提示类目属性错误。
 	 **/
@@ -48,14 +43,14 @@ class FenxiaoProductAddRequest
 	private $discountId;
 	
 	/** 
-	 * 是否有保修，可选值：false（否）、true（是），默认false。
-	 **/
-	private $haveGuarantee;
-	
-	/** 
 	 * 是否有发票，可选值：false（否）、true（是），默认false。
 	 **/
 	private $haveInvoice;
+	
+	/** 
+	 * 是否有保修，可选值：false（否）、true（是），默认false。
+	 **/
+	private $haveQuarantee;
 	
 	/** 
 	 * 产品主图，大小不超过500k，格式为gif,jpg,jpeg,png,bmp等图片
@@ -207,17 +202,6 @@ no:不需要授权
 	
 	private $apiParas = array();
 	
-	public function setAlarmNumber($alarmNumber)
-	{
-		$this->alarmNumber = $alarmNumber;
-		$this->apiParas["alarm_number"] = $alarmNumber;
-	}
-
-	public function getAlarmNumber()
-	{
-		return $this->alarmNumber;
-	}
-
 	public function setCategoryId($categoryId)
 	{
 		$this->categoryId = $categoryId;
@@ -284,17 +268,6 @@ no:不需要授权
 		return $this->discountId;
 	}
 
-	public function setHaveGuarantee($haveGuarantee)
-	{
-		$this->haveGuarantee = $haveGuarantee;
-		$this->apiParas["have_guarantee"] = $haveGuarantee;
-	}
-
-	public function getHaveGuarantee()
-	{
-		return $this->haveGuarantee;
-	}
-
 	public function setHaveInvoice($haveInvoice)
 	{
 		$this->haveInvoice = $haveInvoice;
@@ -304,6 +277,17 @@ no:不需要授权
 	public function getHaveInvoice()
 	{
 		return $this->haveInvoice;
+	}
+
+	public function setHaveQuarantee($haveQuarantee)
+	{
+		$this->haveQuarantee = $haveQuarantee;
+		$this->apiParas["have_quarantee"] = $haveQuarantee;
+	}
+
+	public function getHaveQuarantee()
+	{
+		return $this->haveQuarantee;
 	}
 
 	public function setImage($image)
@@ -638,14 +622,10 @@ no:不需要授权
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->alarmNumber,"alarmNumber");
 		RequestCheckUtil::checkNotNull($this->categoryId,"categoryId");
 		RequestCheckUtil::checkNotNull($this->city,"city");
 		RequestCheckUtil::checkNotNull($this->desc,"desc");
-		RequestCheckUtil::checkNotNull($this->haveGuarantee,"haveGuarantee");
-		RequestCheckUtil::checkNotNull($this->haveInvoice,"haveInvoice");
 		RequestCheckUtil::checkNotNull($this->name,"name");
-		RequestCheckUtil::checkNotNull($this->postageType,"postageType");
 		RequestCheckUtil::checkNotNull($this->productcatId,"productcatId");
 		RequestCheckUtil::checkNotNull($this->prov,"prov");
 		RequestCheckUtil::checkNotNull($this->quantity,"quantity");

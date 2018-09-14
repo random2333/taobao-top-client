@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: tmall.exchange.message.add request
  * 
  * @author auto create
- * @since 1.0, 2017.09.08
+ * @since 1.0, 2018.08.09
  */
 class TmallExchangeMessageAddRequest
 {

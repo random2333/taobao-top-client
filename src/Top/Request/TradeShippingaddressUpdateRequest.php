@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.trade.shippingaddress.update request
  * 
  * @author auto create
- * @since 1.0, 2016.03.23
+ * @since 1.0, 2018.07.25
  */
 class TradeShippingaddressUpdateRequest
 {

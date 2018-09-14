@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: tmall.exchange.consigngoods request
  * 
  * @author auto create
- * @since 1.0, 2017.09.08
+ * @since 1.0, 2018.08.09
  */
 class TmallExchangeConsigngoodsRequest
 {
@@ -109,7 +109,7 @@ class TmallExchangeConsigngoodsRequest
 		
 		RequestCheckUtil::checkNotNull($this->disputeId,"disputeId");
 		RequestCheckUtil::checkNotNull($this->fields,"fields");
-		RequestCheckUtil::checkMaxListSize($this->fields,20,"fields");
+		RequestCheckUtil::checkMaxListSize($this->fields,100,"fields");
 		RequestCheckUtil::checkNotNull($this->logisticsCompanyName,"logisticsCompanyName");
 		RequestCheckUtil::checkNotNull($this->logisticsNo,"logisticsNo");
 		RequestCheckUtil::checkNotNull($this->logisticsType,"logisticsType");

@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.httpdns.get request
  * 
  * @author auto create
- * @since 1.0, 2017.08.31
+ * @since 1.0, 2018.07.25
  */
 class HttpdnsGetRequest
 {

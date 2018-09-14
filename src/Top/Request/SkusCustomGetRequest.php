@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.skus.custom.get request
  * 
  * @author auto create
- * @since 1.0, 2015.11.04
+ * @since 1.0, 2018.08.06
  */
 class SkusCustomGetRequest
 {

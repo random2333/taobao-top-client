@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.nextone.logistics.warehouse.update request
  * 
  * @author auto create
- * @since 1.0, 2017.11.20
+ * @since 1.0, 2018.07.25
  */
 class NextoneLogisticsWarehouseUpdateRequest
 {

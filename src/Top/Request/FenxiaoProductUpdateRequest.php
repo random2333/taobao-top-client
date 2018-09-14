@@ -8,15 +8,10 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.fenxiao.product.update request
  * 
  * @author auto create
- * @since 1.0, 2014.12.12
+ * @since 1.0, 2018.07.26
  */
 class FenxiaoProductUpdateRequest
 {
-	/** 
-	 * 警戒库存必须是0到29999。
-	 **/
-	private $alarmNumber;
-	
 	/** 
 	 * 所属类目id，参考Taobao.itemcats.get，不支持成人等类目，输入成人类目id保存提示类目属性错误。
 	 **/
@@ -48,14 +43,14 @@ class FenxiaoProductUpdateRequest
 	private $discountId;
 	
 	/** 
-	 * 是否有保修，可选值：false（否）、true（是），默认false。
-	 **/
-	private $haveGuarantee;
-	
-	/** 
 	 * 是否有发票，可选值：false（否）、true（是），默认false。
 	 **/
 	private $haveInvoice;
+	
+	/** 
+	 * 是否有保修，可选值：false（否）、true（是），默认false。
+	 **/
+	private $haveQuarantee;
 	
 	/** 
 	 * 主图图片，如果pic_path参数不空，则优先使用pic_path，忽略该参数
@@ -207,17 +202,6 @@ no:不需要授权
 	
 	private $apiParas = array();
 	
-	public function setAlarmNumber($alarmNumber)
-	{
-		$this->alarmNumber = $alarmNumber;
-		$this->apiParas["alarm_number"] = $alarmNumber;
-	}
-
-	public function getAlarmNumber()
-	{
-		return $this->alarmNumber;
-	}
-
 	public function setCategoryId($categoryId)
 	{
 		$this->categoryId = $categoryId;
@@ -284,17 +268,6 @@ no:不需要授权
 		return $this->discountId;
 	}
 
-	public function setHaveGuarantee($haveGuarantee)
-	{
-		$this->haveGuarantee = $haveGuarantee;
-		$this->apiParas["have_guarantee"] = $haveGuarantee;
-	}
-
-	public function getHaveGuarantee()
-	{
-		return $this->haveGuarantee;
-	}
-
 	public function setHaveInvoice($haveInvoice)
 	{
 		$this->haveInvoice = $haveInvoice;
@@ -304,6 +277,17 @@ no:不需要授权
 	public function getHaveInvoice()
 	{
 		return $this->haveInvoice;
+	}
+
+	public function setHaveQuarantee($haveQuarantee)
+	{
+		$this->haveQuarantee = $haveQuarantee;
+		$this->apiParas["have_quarantee"] = $haveQuarantee;
+	}
+
+	public function getHaveQuarantee()
+	{
+		return $this->haveQuarantee;
 	}
 
 	public function setImage($image)

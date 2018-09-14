@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.omniorder.store.reallocate request
  * 
  * @author auto create
- * @since 1.0, 2017.07.27
+ * @since 1.0, 2018.09.10
  */
 class OmniorderStoreReallocateRequest
 {
@@ -93,7 +93,7 @@ class OmniorderStoreReallocateRequest
 		
 		RequestCheckUtil::checkNotNull($this->mainOrderId,"mainOrderId");
 		RequestCheckUtil::checkNotNull($this->subOrderIds,"subOrderIds");
-		RequestCheckUtil::checkMaxListSize($this->subOrderIds,20,"subOrderIds");
+		RequestCheckUtil::checkMaxListSize($this->subOrderIds,100,"subOrderIds");
 	}
 	
 	public function putOtherTextParam($key, $value) {

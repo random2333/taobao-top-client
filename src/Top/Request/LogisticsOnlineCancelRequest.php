@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.logistics.online.cancel request
  * 
  * @author auto create
- * @since 1.0, 2016.11.12
+ * @since 1.0, 2018.07.26
  */
 class LogisticsOnlineCancelRequest
 {

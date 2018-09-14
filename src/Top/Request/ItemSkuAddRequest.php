@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.sku.add request
  * 
  * @author auto create
- * @since 1.0, 2014.10.20
+ * @since 1.0, 2018.08.07
  */
 class ItemSkuAddRequest
 {
@@ -51,30 +51,6 @@ class ItemSkuAddRequest
 	 * Sku的库存数量。sku的总数量应该小于等于商品总数量(Item的NUM)。取值范围:大于零的整数
 	 **/
 	private $quantity;
-	
-	/** 
-	 * 家装建材类目，商品SKU的高度，单位为cm，部分类目必选。天猫商家专用。
-可选值为："0-15", "15-25", "25-50", "50-60", "60-80", "80-120", "120-160", "160-200"。
-数据和SKU一一对应，用,分隔，如：15-25,25-50,25-50
-	 **/
-	private $skuHdHeight;
-	
-	/** 
-	 * 家装建材类目，商品SKU的灯头数量，正整数，大于等于3，部分类目必选。天猫商家专用。
-数据和SKU一一对应，用,分隔，如：3,5,7
-	 **/
-	private $skuHdLampQuantity;
-	
-	/** 
-	 * 家装建材类目，商品SKU的长度，正整数，单位为cm，部分类目必选。天猫商家专用。
-数据和SKU一一对应，用,分隔，如：20,30,30
-	 **/
-	private $skuHdLength;
-	
-	/** 
-	 * 产品的规格信息
-	 **/
-	private $specId;
 	
 	private $apiParas = array();
 	
@@ -164,50 +140,6 @@ class ItemSkuAddRequest
 	public function getQuantity()
 	{
 		return $this->quantity;
-	}
-
-	public function setSkuHdHeight($skuHdHeight)
-	{
-		$this->skuHdHeight = $skuHdHeight;
-		$this->apiParas["sku_hd_height"] = $skuHdHeight;
-	}
-
-	public function getSkuHdHeight()
-	{
-		return $this->skuHdHeight;
-	}
-
-	public function setSkuHdLampQuantity($skuHdLampQuantity)
-	{
-		$this->skuHdLampQuantity = $skuHdLampQuantity;
-		$this->apiParas["sku_hd_lamp_quantity"] = $skuHdLampQuantity;
-	}
-
-	public function getSkuHdLampQuantity()
-	{
-		return $this->skuHdLampQuantity;
-	}
-
-	public function setSkuHdLength($skuHdLength)
-	{
-		$this->skuHdLength = $skuHdLength;
-		$this->apiParas["sku_hd_length"] = $skuHdLength;
-	}
-
-	public function getSkuHdLength()
-	{
-		return $this->skuHdLength;
-	}
-
-	public function setSpecId($specId)
-	{
-		$this->specId = $specId;
-		$this->apiParas["spec_id"] = $specId;
-	}
-
-	public function getSpecId()
-	{
-		return $this->specId;
 	}
 
 	public function getApiMethodName()

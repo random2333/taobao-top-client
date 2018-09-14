@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.qimen.omniorder.store.accpeted request
  * 
  * @author auto create
- * @since 1.0, 2016.09.23
+ * @since 1.0, 2018.08.20
  */
 class QimenOmniorderStoreAccpetedRequest
 {

@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.rp.returngoods.refuse request
  * 
  * @author auto create
- * @since 1.0, 2016.02.19
+ * @since 1.0, 2018.07.27
  */
 class RpReturngoodsRefuseRequest
 {

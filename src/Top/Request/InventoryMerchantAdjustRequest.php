@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.inventory.merchant.adjust request
  * 
  * @author auto create
- * @since 1.0, 2017.04.18
+ * @since 1.0, 2018.07.25
  */
 class InventoryMerchantAdjustRequest
 {

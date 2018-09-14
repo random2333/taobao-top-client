@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.propimg.upload request
  * 
  * @author auto create
- * @since 1.0, 2015.09.22
+ * @since 1.0, 2018.07.25
  */
 class ItemPropimgUploadRequest
 {

@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: cainiao.waybill.ii.cancel request
  * 
  * @author auto create
- * @since 1.0, 2016.11.04
+ * @since 1.0, 2018.07.26
  */
 class CainiaoWaybillIiCancelRequest
 {

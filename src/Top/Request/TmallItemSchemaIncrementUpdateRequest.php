@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: tmall.item.schema.increment.update request
  * 
  * @author auto create
- * @since 1.0, 2017.01.03
+ * @since 1.0, 2018.07.25
  */
 class TmallItemSchemaIncrementUpdateRequest
 {

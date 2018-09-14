@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.add request
  * 
  * @author auto create
- * @since 1.0, 2017.11.30
+ * @since 1.0, 2018.07.25
  */
 class ItemAddRequest
 {
@@ -238,7 +238,7 @@ class ItemAddRequest
 	private $ignorewarning;
 	
 	/** 
-	 * 商品主图片。类型:JPG,GIF;最大长度:3M
+	 * 商品主图片。类型:JPG,GIF;最大长度:3M。（推荐使用pic_path字段，先把图片上传到卖家图片空间）
 	 **/
 	private $image;
 	
@@ -261,6 +261,11 @@ class ItemAddRequest
 	 * 用户自行输入的子属性名和属性值，结构:"父属性值;一级子属性名;一级子属性值;二级子属性名;自定义输入值,....",如：“耐克;耐克系列;科比系列;科比系列;2K5,Nike乔丹鞋;乔丹系列;乔丹鞋系列;乔丹鞋系列;json5”，多个自定义属性用','分割，input_str需要与input_pids一一对应，注：通常一个类目下用户可输入的关键属性不超过1个。所有属性别名加起来不能超过3999字节。此处不可以使用“其他”、“其它”和“其她”这三个词。
 	 **/
 	private $inputStr;
+	
+	/** 
+	 * 主图视频互动信息id，必须填写主图视频id才能有互动信息id
+	 **/
+	private $interactiveId;
 	
 	/** 
 	 * 是否是3D
@@ -306,6 +311,11 @@ class ItemAddRequest
 	 * 商品文字的字符集。繁体传入"zh_HK"，简体传入"zh_CN"，不传默认为简体
 	 **/
 	private $lang;
+	
+	/** 
+	 * 租赁扩展信息
+	 **/
+	private $leaseExtendsInfo;
 	
 	/** 
 	 * 定时上架时间。(时间格式：yyyy-MM-dd HH:mm:ss)
@@ -448,7 +458,7 @@ class ItemAddRequest
 	private $paimaiInfoValidMinute;
 	
 	/** 
-	 * 商品主图需要关联的图片空间的相对url。这个url所对应的图片必须要属于当前用户。pic_path和image只需要传入一个,如果两个都传，默认选择pic_path
+	 * （推荐）商品主图需要关联的图片空间的相对url。这个url所对应的图片必须要属于当前用户。pic_path和image只需要传入一个,如果两个都传，默认选择pic_path
 	 **/
 	private $picPath;
 	
@@ -1169,6 +1179,17 @@ class ItemAddRequest
 		return $this->inputStr;
 	}
 
+	public function setInteractiveId($interactiveId)
+	{
+		$this->interactiveId = $interactiveId;
+		$this->apiParas["interactive_id"] = $interactiveId;
+	}
+
+	public function getInteractiveId()
+	{
+		return $this->interactiveId;
+	}
+
 	public function setIs3D($is3D)
 	{
 		$this->is3D = $is3D;
@@ -1266,6 +1287,17 @@ class ItemAddRequest
 	public function getLang()
 	{
 		return $this->lang;
+	}
+
+	public function setLeaseExtendsInfo($leaseExtendsInfo)
+	{
+		$this->leaseExtendsInfo = $leaseExtendsInfo;
+		$this->apiParas["lease_extends_info"] = $leaseExtendsInfo;
+	}
+
+	public function getLeaseExtendsInfo()
+	{
+		return $this->leaseExtendsInfo;
 	}
 
 	public function setListTime($listTime)

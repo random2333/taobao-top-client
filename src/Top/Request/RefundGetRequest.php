@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.refund.get request
  * 
  * @author auto create
- * @since 1.0, 2016.09.28
+ * @since 1.0, 2018.08.15
  */
 class RefundGetRequest
 {

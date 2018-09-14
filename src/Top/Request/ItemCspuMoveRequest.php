@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.cspu.move request
  * 
  * @author auto create
- * @since 1.0, 2014.07.21
+ * @since 1.0, 2018.07.25
  */
 class ItemCspuMoveRequest
 {

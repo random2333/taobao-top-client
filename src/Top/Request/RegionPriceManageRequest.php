@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.region.price.manage request
  * 
  * @author auto create
- * @since 1.0, 2016.11.24
+ * @since 1.0, 2018.07.25
  */
 class RegionPriceManageRequest
 {

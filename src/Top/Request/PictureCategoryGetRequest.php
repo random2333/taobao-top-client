@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.picture.category.get request
  * 
  * @author auto create
- * @since 1.0, 2016.03.10
+ * @since 1.0, 2018.07.25
  */
 class PictureCategoryGetRequest
 {
@@ -35,7 +35,7 @@ class PictureCategoryGetRequest
 	private $pictureCategoryName;
 	
 	/** 
-	 * 分类类型,fixed代表店铺装修分类类别，auction代表宝贝分类类别，user-define代表用户自定义分类类别
+	 * 1
 	 **/
 	private $type;
 	

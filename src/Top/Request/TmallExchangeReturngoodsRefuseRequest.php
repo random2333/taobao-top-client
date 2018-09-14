@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: tmall.exchange.returngoods.refuse request
  * 
  * @author auto create
- * @since 1.0, 2017.10.25
+ * @since 1.0, 2018.07.25
  */
 class TmallExchangeReturngoodsRefuseRequest
 {

@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.rdc.aligenius.account.validate request
  * 
  * @author auto create
- * @since 1.0, 2017.08.28
+ * @since 1.0, 2018.07.25
  */
 class RdcAligeniusAccountValidateRequest
 {

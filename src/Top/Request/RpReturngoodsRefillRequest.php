@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.rp.returngoods.refill request
  * 
  * @author auto create
- * @since 1.0, 2014.11.10
+ * @since 1.0, 2018.07.27
  */
 class RpReturngoodsRefillRequest
 {

@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.wlb.wms.inventory.lack.upload request
  * 
  * @author auto create
- * @since 1.0, 2015.09.17
+ * @since 1.0, 2018.07.26
  */
 class WlbWmsInventoryLackUploadRequest
 {

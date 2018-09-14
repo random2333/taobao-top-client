@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.picture.replace request
  * 
  * @author auto create
- * @since 1.0, 2014.02.08
+ * @since 1.0, 2018.07.25
  */
 class PictureReplaceRequest
 {

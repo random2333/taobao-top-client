@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.delivery.template.add request
  * 
  * @author auto create
- * @since 1.0, 2017.03.01
+ * @since 1.0, 2018.07.26
  */
 class DeliveryTemplateAddRequest
 {

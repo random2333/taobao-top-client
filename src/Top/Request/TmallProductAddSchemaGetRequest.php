@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: tmall.product.add.schema.get request
  * 
  * @author auto create
- * @since 1.0, 2016.04.13
+ * @since 1.0, 2018.07.25
  */
 class TmallProductAddSchemaGetRequest
 {

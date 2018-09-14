@@ -8,15 +8,10 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.sku.update request
  * 
  * @author auto create
- * @since 1.0, 2015.11.04
+ * @since 1.0, 2018.08.07
  */
 class ItemSkuUpdateRequest
 {
-	/** 
-	 * SKU条形码
-	 **/
-	private $barcode;
-	
 	/** 
 	 * 忽略警告提示.
 	 **/
@@ -58,24 +53,8 @@ class ItemSkuUpdateRequest
 	 **/
 	private $quantity;
 	
-	/** 
-	 * 产品的规格信息。
-	 **/
-	private $specId;
-	
 	private $apiParas = array();
 	
-	public function setBarcode($barcode)
-	{
-		$this->barcode = $barcode;
-		$this->apiParas["barcode"] = $barcode;
-	}
-
-	public function getBarcode()
-	{
-		return $this->barcode;
-	}
-
 	public function setIgnorewarning($ignorewarning)
 	{
 		$this->ignorewarning = $ignorewarning;
@@ -162,17 +141,6 @@ class ItemSkuUpdateRequest
 	public function getQuantity()
 	{
 		return $this->quantity;
-	}
-
-	public function setSpecId($specId)
-	{
-		$this->specId = $specId;
-		$this->apiParas["spec_id"] = $specId;
-	}
-
-	public function getSpecId()
-	{
-		return $this->specId;
 	}
 
 	public function getApiMethodName()

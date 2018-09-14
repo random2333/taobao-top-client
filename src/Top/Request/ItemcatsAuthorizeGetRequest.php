@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.itemcats.authorize.get request
  * 
  * @author auto create
- * @since 1.0, 2016.03.16
+ * @since 1.0, 2018.07.25
  */
 class ItemcatsAuthorizeGetRequest
 {

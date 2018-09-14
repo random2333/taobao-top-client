@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.fenxiao.dealer.requisitionorder.remark.update request
  * 
  * @author auto create
- * @since 1.0, 2016.04.11
+ * @since 1.0, 2018.07.26
  */
 class FenxiaoDealerRequisitionorderRemarkUpdateRequest
 {

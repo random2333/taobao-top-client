@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: cainiao.cloudprint.customarea.update request
  * 
  * @author auto create
- * @since 1.0, 2016.09.19
+ * @since 1.0, 2018.07.25
  */
 class CainiaoCloudprintCustomareaUpdateRequest
 {

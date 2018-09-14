@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.fenxiao.product.skus.get request
  * 
  * @author auto create
- * @since 1.0, 2014.12.12
+ * @since 1.0, 2018.07.26
  */
 class FenxiaoProductSkusGetRequest
 {

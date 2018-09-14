@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.fenxiao.products.get request
  * 
  * @author auto create
- * @since 1.0, 2017.03.06
+ * @since 1.0, 2018.07.26
  */
 class FenxiaoProductsGetRequest
 {
@@ -68,11 +68,6 @@ no:不需要授权
 	 * 开始修改时间
 	 **/
 	private $startModified;
-	
-	/** 
-	 * 产品状态，可选值：up（上架）、down（下架），不传默认查询所有
-	 **/
-	private $status;
 	
 	private $apiParas = array();
 	
@@ -197,17 +192,6 @@ no:不需要授权
 		return $this->startModified;
 	}
 
-	public function setStatus($status)
-	{
-		$this->status = $status;
-		$this->apiParas["status"] = $status;
-	}
-
-	public function getStatus()
-	{
-		return $this->status;
-	}
-
 	public function getApiMethodName()
 	{
 		return "taobao.fenxiao.products.get";
@@ -221,8 +205,6 @@ no:不需要授权
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxListSize($this->itemIds,20,"itemIds");
-		RequestCheckUtil::checkMaxListSize($this->pids,30,"pids");
 	}
 	
 	public function putOtherTextParam($key, $value) {

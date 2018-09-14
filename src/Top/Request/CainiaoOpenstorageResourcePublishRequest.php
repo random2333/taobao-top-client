@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: cainiao.openstorage.resource.publish request
  * 
  * @author auto create
- * @since 1.0, 2016.08.10
+ * @since 1.0, 2018.07.25
  */
 class CainiaoOpenstorageResourcePublishRequest
 {

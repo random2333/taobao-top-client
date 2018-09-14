@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.trades.sold.get request
  * 
  * @author auto create
- * @since 1.0, 2017.11.09
+ * @since 1.0, 2018.08.15
  */
 class TradesSoldGetRequest
 {

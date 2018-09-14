@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.qimen.items.marking request
  * 
  * @author auto create
- * @since 1.0, 2016.07.04
+ * @since 1.0, 2018.07.25
  */
 class QimenItemsMarkingRequest
 {

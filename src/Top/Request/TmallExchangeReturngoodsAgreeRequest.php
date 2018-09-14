@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: tmall.exchange.returngoods.agree request
  * 
  * @author auto create
- * @since 1.0, 2017.09.08
+ * @since 1.0, 2018.08.09
  */
 class TmallExchangeReturngoodsAgreeRequest
 {
@@ -61,7 +61,7 @@ class TmallExchangeReturngoodsAgreeRequest
 		
 		RequestCheckUtil::checkNotNull($this->disputeId,"disputeId");
 		RequestCheckUtil::checkNotNull($this->fields,"fields");
-		RequestCheckUtil::checkMaxListSize($this->fields,20,"fields");
+		RequestCheckUtil::checkMaxListSize($this->fields,100,"fields");
 	}
 	
 	public function putOtherTextParam($key, $value) {

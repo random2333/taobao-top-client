@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.skus.quantity.update request
  * 
  * @author auto create
- * @since 1.0, 2015.11.04
+ * @since 1.0, 2018.07.25
  */
 class SkusQuantityUpdateRequest
 {

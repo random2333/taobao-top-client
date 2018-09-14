@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.omniorder.store.warehouse request
  * 
  * @author auto create
- * @since 1.0, 2017.09.06
+ * @since 1.0, 2018.07.25
  */
 class OmniorderStoreWarehouseRequest
 {

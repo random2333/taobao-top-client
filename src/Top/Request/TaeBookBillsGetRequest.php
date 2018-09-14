@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.tae.book.bills.get request
  * 
  * @author auto create
- * @since 1.0, 2015.03.09
+ * @since 1.0, 2018.07.25
  */
 class TaeBookBillsGetRequest
 {

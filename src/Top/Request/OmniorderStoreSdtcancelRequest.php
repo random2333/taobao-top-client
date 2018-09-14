@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.omniorder.store.sdtcancel request
  * 
  * @author auto create
- * @since 1.0, 2017.05.22
+ * @since 1.0, 2018.07.25
  */
 class OmniorderStoreSdtcancelRequest
 {

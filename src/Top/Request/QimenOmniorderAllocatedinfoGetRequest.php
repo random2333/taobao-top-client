@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.qimen.omniorder.allocatedinfo.get request
  * 
  * @author auto create
- * @since 1.0, 2016.08.04
+ * @since 1.0, 2018.07.25
  */
 class QimenOmniorderAllocatedinfoGetRequest
 {

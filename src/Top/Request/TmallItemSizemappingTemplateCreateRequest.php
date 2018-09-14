@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: tmall.item.sizemapping.template.create request
  * 
  * @author auto create
- * @since 1.0, 2016.02.23
+ * @since 1.0, 2018.07.25
  */
 class TmallItemSizemappingTemplateCreateRequest
 {

@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.anchor.get request
  * 
  * @author auto create
- * @since 1.0, 2014.02.28
+ * @since 1.0, 2018.07.25
  */
 class ItemAnchorGetRequest
 {

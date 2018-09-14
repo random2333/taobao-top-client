@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.update request
  * 
  * @author auto create
- * @since 1.0, 2017.11.30
+ * @since 1.0, 2018.08.07
  */
 class ItemUpdateRequest
 {
@@ -263,6 +263,11 @@ class ItemUpdateRequest
 	private $inputStr;
 	
 	/** 
+	 * 主图视频互动信息id，必须有主图视频id才能传互动信息id
+	 **/
+	private $interactiveId;
+	
+	/** 
 	 * 是否是3D
 	 **/
 	private $is3D;
@@ -311,6 +316,11 @@ class ItemUpdateRequest
 	 * 商品文字的版本，繁体传入”zh_HK”，简体传入”zh_CN”
 	 **/
 	private $lang;
+	
+	/** 
+	 * 淘宝租赁扩展信息
+	 **/
+	private $leaseExtendsInfo;
 	
 	/** 
 	 * 上架时间。大于当前时间则宝贝会下架进入定时上架的宝贝中。
@@ -1169,6 +1179,17 @@ class ItemUpdateRequest
 		return $this->inputStr;
 	}
 
+	public function setInteractiveId($interactiveId)
+	{
+		$this->interactiveId = $interactiveId;
+		$this->apiParas["interactive_id"] = $interactiveId;
+	}
+
+	public function getInteractiveId()
+	{
+		return $this->interactiveId;
+	}
+
 	public function setIs3D($is3D)
 	{
 		$this->is3D = $is3D;
@@ -1277,6 +1298,17 @@ class ItemUpdateRequest
 	public function getLang()
 	{
 		return $this->lang;
+	}
+
+	public function setLeaseExtendsInfo($leaseExtendsInfo)
+	{
+		$this->leaseExtendsInfo = $leaseExtendsInfo;
+		$this->apiParas["lease_extends_info"] = $leaseExtendsInfo;
+	}
+
+	public function getLeaseExtendsInfo()
+	{
+		return $this->leaseExtendsInfo;
 	}
 
 	public function setListTime($listTime)

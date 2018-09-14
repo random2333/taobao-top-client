@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.top.ipout.get request
  * 
  * @author auto create
- * @since 1.0, 2017.07.31
+ * @since 1.0, 2018.08.07
  */
 class TopIpoutGetRequest
 {

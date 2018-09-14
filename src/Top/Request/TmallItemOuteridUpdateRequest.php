@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: tmall.item.outerid.update request
  * 
  * @author auto create
- * @since 1.0, 2017.01.04
+ * @since 1.0, 2018.07.25
  */
 class TmallItemOuteridUpdateRequest
 {

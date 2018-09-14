@@ -8,10 +8,15 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.fenxiao.distributor.products.get request
  * 
  * @author auto create
- * @since 1.0, 2017.03.06
+ * @since 1.0, 2018.07.26
  */
 class FenxiaoDistributorProductsGetRequest
 {
+	/** 
+	 * download_status
+	 **/
+	private $downloadStatus;
+	
 	/** 
 	 * 结束时间
 	 **/
@@ -26,6 +31,11 @@ class FenxiaoDistributorProductsGetRequest
 	 * 根据商品ID列表查询，优先级次于产品ID列表，高于其他分页查询条件。如果商品不是分销商品，自动过滤。最大限制20，用逗号分割，例如：“1001,1002,1003,1004,1005”
 	 **/
 	private $itemIds;
+	
+	/** 
+	 * order_by
+	 **/
+	private $orderBy;
 	
 	/** 
 	 * 页码（大于0的整数，默认1）
@@ -57,8 +67,29 @@ class FenxiaoDistributorProductsGetRequest
 	 **/
 	private $supplierNick;
 	
+	/** 
+	 * time_type
+	 **/
+	private $timeType;
+	
+	/** 
+	 * trade_type
+	 **/
+	private $tradeType;
+	
 	private $apiParas = array();
 	
+	public function setDownloadStatus($downloadStatus)
+	{
+		$this->downloadStatus = $downloadStatus;
+		$this->apiParas["download_status"] = $downloadStatus;
+	}
+
+	public function getDownloadStatus()
+	{
+		return $this->downloadStatus;
+	}
+
 	public function setEndTime($endTime)
 	{
 		$this->endTime = $endTime;
@@ -90,6 +121,17 @@ class FenxiaoDistributorProductsGetRequest
 	public function getItemIds()
 	{
 		return $this->itemIds;
+	}
+
+	public function setOrderBy($orderBy)
+	{
+		$this->orderBy = $orderBy;
+		$this->apiParas["order_by"] = $orderBy;
+	}
+
+	public function getOrderBy()
+	{
+		return $this->orderBy;
 	}
 
 	public function setPageNo($pageNo)
@@ -158,6 +200,28 @@ class FenxiaoDistributorProductsGetRequest
 		return $this->supplierNick;
 	}
 
+	public function setTimeType($timeType)
+	{
+		$this->timeType = $timeType;
+		$this->apiParas["time_type"] = $timeType;
+	}
+
+	public function getTimeType()
+	{
+		return $this->timeType;
+	}
+
+	public function setTradeType($tradeType)
+	{
+		$this->tradeType = $tradeType;
+		$this->apiParas["trade_type"] = $tradeType;
+	}
+
+	public function getTradeType()
+	{
+		return $this->tradeType;
+	}
+
 	public function getApiMethodName()
 	{
 		return "taobao.fenxiao.distributor.products.get";
@@ -171,6 +235,7 @@ class FenxiaoDistributorProductsGetRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkMaxListSize($this->fields,20,"fields");
 		RequestCheckUtil::checkMaxListSize($this->itemIds,20,"itemIds");
 		RequestCheckUtil::checkMaxListSize($this->pids,30,"pids");
 	}

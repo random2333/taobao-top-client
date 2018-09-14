@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.qimen.trade.user.delete request
  * 
  * @author auto create
- * @since 1.0, 2017.07.18
+ * @since 1.0, 2018.07.25
  */
 class QimenTradeUserDeleteRequest
 {

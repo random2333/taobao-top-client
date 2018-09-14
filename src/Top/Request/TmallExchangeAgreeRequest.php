@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: tmall.exchange.agree request
  * 
  * @author auto create
- * @since 1.0, 2017.11.20
+ * @since 1.0, 2018.08.09
  */
 class TmallExchangeAgreeRequest
 {

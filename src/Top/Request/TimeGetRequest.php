@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.time.get request
  * 
  * @author auto create
- * @since 1.0, 2016.10.12
+ * @since 1.0, 2018.07.25
  */
 class TimeGetRequest
 {

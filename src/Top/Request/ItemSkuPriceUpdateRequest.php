@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.sku.price.update request
  * 
  * @author auto create
- * @since 1.0, 2015.01.04
+ * @since 1.0, 2018.08.07
  */
 class ItemSkuPriceUpdateRequest
 {

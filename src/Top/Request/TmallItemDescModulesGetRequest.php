@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: tmall.item.desc.modules.get request
  * 
  * @author auto create
- * @since 1.0, 2013.07.09
+ * @since 1.0, 2018.07.25
  */
 class TmallItemDescModulesGetRequest
 {

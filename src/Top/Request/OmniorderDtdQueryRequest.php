@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.omniorder.dtd.query request
  * 
  * @author auto create
- * @since 1.0, 2017.10.13
+ * @since 1.0, 2018.07.25
  */
 class OmniorderDtdQueryRequest
 {

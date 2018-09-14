@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.itempropvalues.get request
  * 
  * @author auto create
- * @since 1.0, 2016.09.21
+ * @since 1.0, 2018.07.25
  */
 class ItempropvaluesGetRequest
 {

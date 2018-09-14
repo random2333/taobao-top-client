@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: cainiao.waybill.ii.get request
  * 
  * @author auto create
- * @since 1.0, 2017.09.21
+ * @since 1.0, 2018.07.20
  */
 class CainiaoWaybillIiGetRequest
 {

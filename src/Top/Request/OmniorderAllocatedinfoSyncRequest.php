@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.omniorder.allocatedinfo.sync request
  * 
  * @author auto create
- * @since 1.0, 2016.09.10
+ * @since 1.0, 2018.07.25
  */
 class OmniorderAllocatedinfoSyncRequest
 {

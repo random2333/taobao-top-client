@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.omniorder.storecollect.consume request
  * 
  * @author auto create
- * @since 1.0, 2017.05.04
+ * @since 1.0, 2018.07.25
  */
 class OmniorderStorecollectConsumeRequest
 {

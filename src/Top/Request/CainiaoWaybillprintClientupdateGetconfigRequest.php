@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: cainiao.waybillprint.clientupdate.getconfig request
  * 
  * @author auto create
- * @since 1.0, 2016.09.09
+ * @since 1.0, 2018.07.25
  */
 class CainiaoWaybillprintClientupdateGetconfigRequest
 {

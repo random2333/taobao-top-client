@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.increment.update.schema.get request
  * 
  * @author auto create
- * @since 1.0, 2015.05.06
+ * @since 1.0, 2018.07.25
  */
 class ItemIncrementUpdateSchemaGetRequest
 {

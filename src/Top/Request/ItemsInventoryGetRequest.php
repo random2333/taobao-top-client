@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.items.inventory.get request
  * 
  * @author auto create
- * @since 1.0, 2017.06.09
+ * @since 1.0, 2018.08.06
  */
 class ItemsInventoryGetRequest
 {
@@ -46,11 +46,6 @@ approve_status,num_iid,title,nick,type,cid,pic_url,num,props,valid_thru, list_ti
 	 * 是否参与会员折扣。可选值：true，false。默认不过滤该条件
 	 **/
 	private $hasDiscount;
-	
-	/** 
-	 * 是否挂接了达尔文标准产品体系。
-	 **/
-	private $isCspu;
 	
 	/** 
 	 * 商品是否在外部网店显示
@@ -147,17 +142,6 @@ approve_status,num_iid,title,nick,type,cid,pic_url,num,props,valid_thru, list_ti
 	public function getHasDiscount()
 	{
 		return $this->hasDiscount;
-	}
-
-	public function setIsCspu($isCspu)
-	{
-		$this->isCspu = $isCspu;
-		$this->apiParas["is_cspu"] = $isCspu;
-	}
-
-	public function getIsCspu()
-	{
-		return $this->isCspu;
 	}
 
 	public function setIsEx($isEx)
@@ -264,7 +248,6 @@ approve_status,num_iid,title,nick,type,cid,pic_url,num,props,valid_thru, list_ti
 		RequestCheckUtil::checkMinValue($this->cid,0,"cid");
 		RequestCheckUtil::checkNotNull($this->fields,"fields");
 		RequestCheckUtil::checkMaxValue($this->pageNo,101,"pageNo");
-		RequestCheckUtil::checkMaxListSize($this->sellerCids,32,"sellerCids");
 	}
 	
 	public function putOtherTextParam($key, $value) {

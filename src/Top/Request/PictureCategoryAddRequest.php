@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.picture.category.add request
  * 
  * @author auto create
- * @since 1.0, 2016.04.14
+ * @since 1.0, 2018.07.25
  */
 class PictureCategoryAddRequest
 {

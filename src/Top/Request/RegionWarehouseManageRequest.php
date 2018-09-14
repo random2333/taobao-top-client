@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.region.warehouse.manage request
  * 
  * @author auto create
- * @since 1.0, 2016.07.14
+ * @since 1.0, 2018.07.25
  */
 class RegionWarehouseManageRequest
 {
@@ -60,7 +60,7 @@ class RegionWarehouseManageRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->regions,"regions");
-		RequestCheckUtil::checkMaxListSize($this->regions,20,"regions");
+		RequestCheckUtil::checkMaxListSize($this->regions,100,"regions");
 		RequestCheckUtil::checkNotNull($this->storeCode,"storeCode");
 	}
 	

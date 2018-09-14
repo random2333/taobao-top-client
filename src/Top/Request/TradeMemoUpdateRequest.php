@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.trade.memo.update request
  * 
  * @author auto create
- * @since 1.0, 2015.07.02
+ * @since 1.0, 2018.07.25
  */
 class TradeMemoUpdateRequest
 {

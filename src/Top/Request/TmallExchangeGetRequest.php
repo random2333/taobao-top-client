@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: tmall.exchange.get request
  * 
  * @author auto create
- * @since 1.0, 2017.09.08
+ * @since 1.0, 2018.08.08
  */
 class TmallExchangeGetRequest
 {
@@ -18,7 +18,7 @@ class TmallExchangeGetRequest
 	private $disputeId;
 	
 	/** 
-	 * 返回字段。目前支持dispute_id, bizorder_id, num, buyer_nick,buyer_name, status, created, modified, reason, title, buyer_logistic_no, seller_logistic_no, bought_sku, exchange_sku, buyer_address, address, time_out, buyer_phone, buyer_logistic_name, seller_logistic_name
+	 * 返回字段。目前支持dispute_id, bizorder_id, num, buyer_nick, status, created, modified, reason, title, buyer_logistic_no, seller_logistic_no, bought_sku, exchange_sku, buyer_address, address, buyer_phone, buyer_logistic_name, seller_logistic_name, alipay_no, buyer_name, seller_nick
 	 **/
 	private $fields;
 	
@@ -61,7 +61,7 @@ class TmallExchangeGetRequest
 		
 		RequestCheckUtil::checkNotNull($this->disputeId,"disputeId");
 		RequestCheckUtil::checkNotNull($this->fields,"fields");
-		RequestCheckUtil::checkMaxListSize($this->fields,20,"fields");
+		RequestCheckUtil::checkMaxListSize($this->fields,100,"fields");
 	}
 	
 	public function putOtherTextParam($key, $value) {

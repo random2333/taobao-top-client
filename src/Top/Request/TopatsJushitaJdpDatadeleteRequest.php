@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.topats.jushita.jdp.datadelete request
  * 
  * @author auto create
- * @since 1.0, 2017.08.10
+ * @since 1.0, 2018.07.25
  */
 class TopatsJushitaJdpDatadeleteRequest
 {

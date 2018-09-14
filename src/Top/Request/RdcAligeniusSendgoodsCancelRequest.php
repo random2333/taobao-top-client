@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.rdc.aligenius.sendgoods.cancel request
  * 
  * @author auto create
- * @since 1.0, 2017.11.12
+ * @since 1.0, 2018.09.12
  */
 class RdcAligeniusSendgoodsCancelRequest
 {

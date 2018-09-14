@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.inventory.initial request
  * 
  * @author auto create
- * @since 1.0, 2016.03.01
+ * @since 1.0, 2018.07.25
  */
 class InventoryInitialRequest
 {

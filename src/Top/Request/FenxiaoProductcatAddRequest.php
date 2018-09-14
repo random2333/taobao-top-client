@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.fenxiao.productcat.add request
  * 
  * @author auto create
- * @since 1.0, 2016.04.12
+ * @since 1.0, 2018.07.26
  */
 class FenxiaoProductcatAddRequest
 {

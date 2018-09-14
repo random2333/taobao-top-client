@@ -8,7 +8,7 @@ use Top\RequestCheckUtil;
  * TOP API: taobao.item.templates.get request
  * 
  * @author auto create
- * @since 1.0, 2016.03.05
+ * @since 1.0, 2018.07.26
  */
 class ItemTemplatesGetRequest
 {
